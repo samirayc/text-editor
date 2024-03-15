@@ -50,7 +50,23 @@ module.exports = () => {
 
     module: {
       rules: [ 
-        
+        //TODO: Add CSS loader to webpack
+        {
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        },
+        //TODO: Add babel to webpack
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+            },
+          },
+        },
       ],
     },
   };
