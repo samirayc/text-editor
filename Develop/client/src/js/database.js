@@ -29,6 +29,22 @@ export const putDb = async (content) => {
 };
 
 // TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => console.error('getDb not implemented');
+export const getDb = async () => {
+  console.error('getDb not implemented');
+  console.log('GET all from the database');
+  // Connect to DB 
+  const todosDb = await openDB('text', 1);
+  // Make new transaction, specify the db being posted to
+  const tx = todosDb.transaction('text', 'readonly');
+  // Open the object store
+  const store = tx.objectStore('text');
+  // Use getAll method to grab all of the content in the DB
+  const request = store.getAll();
+  // Confirm that the data was fetched
+  const result = await request;
+  // Return result.value;
+  console.log('result.value', result);
+}
+
 
 initdb();
