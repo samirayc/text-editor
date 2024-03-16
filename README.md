@@ -7,17 +7,14 @@
 
 ## Description
 
-This application can be downloaded and used offline as a web text editor where the user can create notes or code snippets that can be accessed later. To download this application, visit LINK HERE or clone the [repository](https://github.com/samirayc/text-editor) to your local machine.
+This application can be downloaded and used offline as a web text editor where the user can create notes or code snippets that can be accessed later. To download this application, go [here](https://text-editor-74r8.onrender.com/) or clone the [repository](https://github.com/samirayc/text-editor) to your local machine.
 
 ## Table of Contents
 
-* [Preview](#preview)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Technologies](#technologies)
 * [Contact](#contact)
-
-## Preview
 
 ## Installation
 
@@ -30,7 +27,7 @@ This application can be downloaded and used offline as a web text editor where t
 
 ## Usage
 
-To use application offline, visit deployed link: ENTER LINK HERE and install to use.
+To use application offline, visit deployed [link](https://text-editor-74r8.onrender.com/) and install to use.
 
 ## Technologies
 
